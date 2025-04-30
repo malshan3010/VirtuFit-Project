@@ -15,7 +15,7 @@ const snap = useSnapshot(state);
 
   
 
-  const logoTexture = useTexture(snap.logoDecal);
+  const logoTexture = useTexture(snap.log
   const fullTexture = useTexture(snap.fullDecal);
   const stateString = JSON.stringify(snap);
 
