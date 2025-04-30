@@ -43,7 +43,32 @@ export const getSavedCards = async (req, res) => {
 };
 
 // Update card details
+export const updateCardDetails = async (req, res) => {
+  const { id } = req.params;
+  let { cardNumber, expiryDate, cvc, cardholderName } = req.body;
 
+  try {
+    cardNumber = cardNumber.replace(/\s/g, '');
+
+    const updatedCard = await Card.findByIdAndUpdate(
+      id,
+      { cardNumber, expiryDate, cvc, cardholderName },
+      { new: true }
+    );
+
+    if (!updatedCard) {
+      return res.status(404).json({ error: 'Card not found' });
+    }
+
+    res.status(200).json({
+      message: 'Card updated successfully',
+      card: updatedCard,
+    });
+  } catch (error) {
+    console.error('Error updating card details:', error);
+    res.status(500).json({ error: 'Server Error' });
+  }
+};
 
 // Delete card details
 export const deleteCard = async (req, res) => {
