@@ -1,5 +1,4 @@
-<h1 align="center">🛍️ VirtuFit - 3D Virtual Dressing Room </h1>
-<h3 align="center"> E-Commerce Web Application</h3>
+<h1 align="center">🛍️ ViruFit - 3D Virtual Dressing Room </h1>
 
 <p>VirtuFit is a next-generation e-commerce platform that allows users to customize their clothing in real-time using an interactive 3D model. With our virtual dressing room, customers can change colors, add textures, upload logos, or even generate designs through AI prompts. Once customized, users can easily add items to their cart and purchase them, all in a seamless and immersive online shopping experience. VirtuFit offers an innovative and personalized approach to fashion shopping.</p>
 
