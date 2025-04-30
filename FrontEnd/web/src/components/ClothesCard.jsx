@@ -17,12 +17,7 @@ const ClothesCard = ({ item }) => {
         } 
       </div>
     </div>
-      <div className="p-4">
-        <h2 className="text-lg font-semibold text-gray-800">{item.name}</h2>
-        <p className="text-gray-600 mt-2">${item.price}</p>
-        <Link to={item.viewDetails} className="px-2 py-1 bg-gradient-to-r from-green-300 via-teal-300 to-cyan-400 rounded-lg text-black">
-          View Product
-        </Link>
+      <div clas
       </div>
     </div>
   );
