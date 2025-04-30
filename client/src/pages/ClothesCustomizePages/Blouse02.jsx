@@ -14,17 +14,7 @@ function Blouse02Model({ color }) {
 
   const { nodes, materials } = useGLTF('/Models/belly_button.glb');
 
-  return (
-    <group scale={[0.1, 0.1, 0.1]}>
-      <mesh
-        castShadow
-        geometry={nodes.BellyButtonLongSleeveShirt_M_Croptop_0.geometry}
-        material={materials.M_Croptop}
-        dispose={null}
-        material-color={color} // Apply dynamic color to the material
-        >
-        {snap.isFullTexture && (
-         <meshStandardMaterial map={fullTexture} />
+  >
        )}
      </mesh>
     </group>
