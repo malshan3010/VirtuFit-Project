@@ -87,6 +87,35 @@ const Customizer = () => {
   };
 
   // Function to handle canvas download
+  const handleAddToCart = () => {
+    console.log("add to cart")
+  };
+
+
+
+  const handleDecals = (type, result) => {
+    const decalType = DecalTypes[type];
+
+    state[decalType.stateProperty] = result;
+
+    if(!activeFilterTab[decalType.filterTab]) {
+      handleActiveFilterTab(decalType.filterTab)
+    }
+  }
+
+  const handleActiveFilterTab = (tabName) => {
+    switch (tabName) {
+      case "logo":
+          state.isLogoTexture = !activeFilterTab[tabName];
+        break;
+      case "style":
+          state.isFullTexture = !activeFilterTab[tabName];
+        break;
+      default:
+        state.isLogoTexture = true;
+        state.isFullTexture = false;
+        break;
+    }
 
     // after setting the state, activeFilterTab is updated
 
