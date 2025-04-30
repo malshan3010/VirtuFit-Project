@@ -76,7 +76,7 @@ const SideBar = () => {
                   <span>Add User</span>
                 </NavLink>
               </div>
-              {/* <div className="flex flex-col px-4 mt-2 gap-4 p-2 border-white">
+              <div className="flex flex-col px-4 mt-2 gap-4 p-2 border-white">
                 <NavLink
                   to="/dashboard/finance"
                   className={({ isActive }) =>
@@ -88,7 +88,7 @@ const SideBar = () => {
                   <FaMoneyBill size={20} />
                   <span>Finance</span>
                 </NavLink>
-              </div> */}
+              </div>
             </>
           )}
           {(userRole === "product-manager" || userRole === "admin") && (
