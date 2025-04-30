@@ -185,7 +185,9 @@ const Customizer = () => {
           </motion.div>
 
           {/* Download button  and cart button*/}
-          <
+          <motion.div
+            className="absolute z-10 bottom-10 right-10"
+            {...fadeAnimation}
           >
 
               <Button
