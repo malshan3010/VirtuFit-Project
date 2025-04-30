@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeClothesCard = ({ item }) => {
   return (
@@ -12,9 +12,6 @@ const HomeClothesCard = ({ item }) => {
       <div className="p-4">
         <h2 className="text-lg font-semibold text-gray-800">{item.name}</h2>
         <p className="text-gray-600 mt-2">${item.price}</p>
-        <Link to={item.viewProduct} className="px-2 py-1 bg-gradient-to-r from-green-300 via-teal-300 to-cyan-400 rounded-lg text-white">
-          View Product
-        </Link>
       </div>
     </div>
   );
