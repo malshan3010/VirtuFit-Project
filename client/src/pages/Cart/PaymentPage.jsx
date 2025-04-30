@@ -77,7 +77,15 @@ const PaymentPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!validate()) return; // Validate before submission
 
+    const deliveryData = {
+      ...deliveryInfo,
+      paymentMethod,
+      subtotal: summary.subtotal,
+      deliveryFee: summary.deliveryFee,
+      total: summary.total,
+    };
 
     try {
       const response = await fetch('http://localhost:3000/delivery', {
