@@ -64,7 +64,15 @@ const snap = useSnapshot(state);
   );
 }
 
-
+export default function CottonPantPage() {
+  return (
+    <main className='app transition-all ease-in'>
+    <Customizer/>
+    <Canvas 
+    shadows
+    camera={{ position: [0, 0, 0], fov: 25 }}
+    gl={{ preserveDrawingBuffer: true }}
+    className="w-full max-w-full h-full transition-all ease-in"
     >
      <directionalLight intensity={1.5} />
      <Environment preset='city' />
