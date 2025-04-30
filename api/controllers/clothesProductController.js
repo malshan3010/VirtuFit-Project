@@ -20,7 +20,7 @@ export const addProduct = async (req, res) => {
     const parsedDetails = typeof details === 'string' ? JSON.parse(details) : details;
 
     // Creating a new product with the parsed data
-    const newProduct = new ClothesProduct({
+    const newProduct = new Cloth
       name,
       price,
       sku,
