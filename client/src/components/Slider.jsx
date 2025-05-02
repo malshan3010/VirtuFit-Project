@@ -9,7 +9,7 @@ export default function Slider() {
         },
         {
             id: 2,
-            image: 'https://zigzag.lk/cdn/shop/files/FB_Cover_20240802_dresses_3589x.progressive.jpg?
+            image: 'https://zigzag.lk/cdn/shop/files/FB_Cover_20240802_dresses_3589x.progressive.jpg?v=1722853062',
             title: 'Stylish T-Shirt',
         },
         {
