@@ -19,7 +19,7 @@ export const FilterTabs = [
   },
   {
     name: "style",
-    icon: sty
+    icon: stylishShirt,
   },
 ];
 
