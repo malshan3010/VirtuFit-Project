@@ -5,7 +5,6 @@ import Tab from "./Tools/Tab";
 
 export { 
   CustomButton,
-  AIPicker,
-  FilePicker,
+  AIPicker,Picker,
   Tab,
 };
