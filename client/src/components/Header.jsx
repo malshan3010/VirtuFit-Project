@@ -20,7 +20,10 @@ export default function Header() {
         const response = await fetch('http://localhost:3000/cart'); // Assuming this endpoint returns cart items
         if (response.ok) {
           const cartItems = await response.json();
-          setCartCount
+          setCartCount(cartItems.length); // Update the cart item count
+        }
+      } catch (error) {
+        console.error('Error fetching cart items:', error);
       }
     };
 
